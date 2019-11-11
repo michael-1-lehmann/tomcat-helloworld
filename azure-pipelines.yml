@@ -23,7 +23,7 @@ steps:
 
 - task: CopyFiles@2
   inputs:
-    SourceFolder: 'target'
+    SourceFolder: 'tomcat_base_webapp/target'
     Contents: '*.war'
     TargetFolder: '$(Build.ArtifactStagingDirectory)'
 
