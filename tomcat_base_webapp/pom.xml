@@ -17,8 +17,8 @@
 	<dependencies>
 		<dependency>
 			<groupId>javax.servlet</groupId>
-			<artifactId>servlet-api</artifactId>
-			<version>2.5</version>
+			<artifactId>javax.servlet-api</artifactId>
+			<version>4.0.1</version>
 		</dependency>
 		<dependency>
 			<groupId>org.junit.jupiter</groupId>
@@ -86,6 +86,11 @@
 			<plugin>
 				<artifactId>maven-surefire-plugin</artifactId>
 				<version>2.22.2</version>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-war-plugin</artifactId>
+				<version>3.3.0</version>
 			</plugin>
 		</plugins>
 	</build>
