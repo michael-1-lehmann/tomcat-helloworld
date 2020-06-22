@@ -10,10 +10,11 @@ import javax.servlet.http.HttpServletResponse;
 /**
  * Servlet implementation class HelloWorldServlet
  */
-@WebServlet("/HelloWorld")
+@WebServlet("/helloworld")
 public class HelloWorldServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
-       
+
+	public static final String HELLO_MESSAGE = "<h1>Hello World</h1>";
     /**
      * @see HttpServlet#HttpServlet()
      */
@@ -27,7 +28,7 @@ public class HelloWorldServlet extends HttpServlet {
 	 */
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		// TODO Auto-generated method stub
-		response.getWriter().append("<h1>Hello World</h1>").append(request.getContextPath());
+		response.getWriter().append(HELLO_MESSAGE);
 	}
 
 	/**
