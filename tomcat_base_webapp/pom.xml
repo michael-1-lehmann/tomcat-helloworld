@@ -124,7 +124,7 @@
 							<goal>start</goal>
 						</goals>
 					</execution>
-					<execution>
+  					<execution>
 						<id>stop</id>
 						<phase>post-integration-test</phase>
 						<goals>
