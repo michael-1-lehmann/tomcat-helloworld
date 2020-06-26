@@ -142,7 +142,7 @@
 							</build>
 							<run>
 								<ports>
-									<port>8080:8080</port>
+									<port>8080:9090</port>
 								</ports>
 								<wait>
 									<!-- Check for this URL to return a 200 return code .... -->

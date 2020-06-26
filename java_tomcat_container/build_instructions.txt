@@ -3,5 +3,12 @@ docker build -f Dockerfile_java -t zulu-openjdk-centos:11.0.7 .
 docker run -it -d zulu-openjdk-centos:11.0.7
 
 # Build Tomcat Container Image
-docker build -f Dockerfile_tomcat1 -t tomcat:8.5.56 .
+docker build -f Dockerfile_tomcat1 -t tomcat-jre11:8.5.56 .
 docker run -p 8080:8080 tomcat:8.5.56
+
+# Run HelloWorld Webapp
+docker run -p 8080:8080 helloworld:latest
+
+#Docker commands
+#Remove all stopped containters
+docker rm $(docker ps -a -q)

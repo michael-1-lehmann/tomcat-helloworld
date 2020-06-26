@@ -28,5 +28,5 @@ ENV PATH ${PATH}:${JAVA_HOME}/bin
 
 VOLUME [ "/usr/lib/jvm/zulu-11" ]
 
-ENTRYPOINT ["java"]
-CMD ["-version"]
+#ENTRYPOINT ["java"]
+#CMD ["-version"]
