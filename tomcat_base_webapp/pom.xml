@@ -144,6 +144,9 @@
 								<ports>
 									<port>8080:9090</port>
 								</ports>
+								<env>
+									<JAVA_OPTS>-Dport.http=9090</JAVA_OPTS>
+								</env>
 								<wait>
 									<!-- Check for this URL to return a 200 return code .... -->
 									<url>http://localhost:8080/${finalname}</url>
