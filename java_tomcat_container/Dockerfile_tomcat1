@@ -2,7 +2,7 @@ FROM zulu-openjdk-centos:11.0.7
 
 MAINTAINER Michael Lehmann <michael.3.lehmann@mailbox.org>
 
-ENV TOMCAT_MINOR_VERSION 8.5.56
+ENV TOMCAT_MINOR_VERSION 8.5.57
 ENV CATALINA_HOME /opt/tomcat
 ENV PATH $CATALINA_HOME/bin:$PATH
 
