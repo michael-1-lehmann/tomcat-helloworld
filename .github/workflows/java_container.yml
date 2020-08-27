@@ -24,7 +24,7 @@ jobs:
 
       # Build and push Docker images
       - name: Build and push Docker images
-        run: docker/build-push-action@v1
+        uses: docker/build-push-action@v1
         with:
           dockerfile: ../java_container/Dockerfile 
           username: ${{ secrets.DOCKER_USERNAME }}
