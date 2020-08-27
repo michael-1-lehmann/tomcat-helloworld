@@ -31,4 +31,4 @@ jobs:
           password: ${{ secrets.DOCKER_PASSWORD }}
           repository: mlehmann007/samples
           tags: Azul-Zulu_Java-11.0.7
-          push: ${{ startsWith(github.ref, 'refs/tags/Java') }}
+          push: ${{ startsWith(github.ref, 'releases/tags/Java') }}
