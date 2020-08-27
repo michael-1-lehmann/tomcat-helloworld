@@ -3,7 +3,7 @@ FROM centos:7
 
 MAINTAINER Michael Lehmann <michael.3.lehmann@mailbox.org>
 
-ENV AZUL_ZULU_MINOR_VERSION zulu11-jre
+ENV AZUL_ZULU_MINOR_VERSION zulu-11-11.39+15
 
 #
 # UTF-8 by default
