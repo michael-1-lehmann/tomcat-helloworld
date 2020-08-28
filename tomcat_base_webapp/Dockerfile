@@ -1,4 +1,4 @@
-FROM tomcat-jre11:8.5.57
+FROM mlehmann007/samples:Tomcat-8.5.57-Zulu_Java-11.0.7
 
 COPY target/helloworld.war $CATALINA_HOME/webapps/helloworld.war
 
