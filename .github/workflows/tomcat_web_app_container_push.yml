@@ -34,4 +34,4 @@ jobs:
  
 
       - name: Build with Maven
-        run: mvn -B docker:build docker:push -Dregistry.username="${{ secrets.DOCKER_USERNAME }}" -Dregistry.password="${{ secrets.DOCKER_PASSWORD }}" --file ./tomcat_base_webapp/pom.xml
+        run: mvn -B install docker:build docker:push -Dregistry.username="${{ secrets.DOCKER_USERNAME }}" -Dregistry.password="${{ secrets.DOCKER_PASSWORD }}" --file ./tomcat_base_webapp/pom.xml
