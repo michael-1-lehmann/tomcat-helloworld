@@ -2,7 +2,7 @@
 	<modelVersion>4.0.0</modelVersion>
 	<groupId>tomcat_base_webapp</groupId>
 	<artifactId>tomcat_base_webapp</artifactId>
-	<version>0.0.4-SNAPSHOT</version>
+	<version>0.0.4</version>
 	<packaging>war</packaging>
 
 	<scm>
