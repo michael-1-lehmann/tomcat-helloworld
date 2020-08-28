@@ -162,7 +162,9 @@
 							<name>mlehmann007/samples</name>
 							<build>
 								<dockerFile>${project.basedir}/Dockerfile</dockerFile>
-								<tags>tomcat-helloworld-${project.version}</tags>
+								<tags>
+									<tag>tomcat-helloworld-${project.version}</tag>
+								</tags>
 							</build>
 							<run>
 								<ports>-
