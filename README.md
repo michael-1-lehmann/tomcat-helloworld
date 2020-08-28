@@ -14,5 +14,5 @@ To run the example follow the steps:
    1. Go to folder tomcat_base_webapp
    1. Enter `mvn install`
    1. Start the docker container: `docker run -p 8080:8080 helloworld:latest`
-   1. Enter mvn release:clean and mvn release:prepare. This will create a docker image with the release version (e.g. v0.0.x) using the tagged version v0.0.x
+   1. Enter mvn `release:clean` and `mvn release:prepare`. This will create a docker image with the release version (e.g. v0.0.x) using the tagged version v0.0.x
    
