@@ -9,7 +9,7 @@
 		<connection>scm:git:https://github.com/michael-1-lehmann/tomcat-helloworld</connection>
 		<developerConnection>scm:git:https://github.com/michael-1-lehmann/tomcat-helloworld</developerConnection>
 		<url>https://github.com/michael-1-lehmann/tomcat-helloworld</url>
-	  <tag>HEAD</tag>
+	  <tag>v0.0.4</tag>
   </scm>
 
 	<properties>
