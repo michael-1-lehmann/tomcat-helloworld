@@ -161,10 +161,7 @@
 						<image>
 							<name>mlehmann007/samples</name>
 							<build>
-								<dockerFile>${project.basedir}/Dockerfile</dockerFile>
-								<tags>
-									<tag>tomcat-helloworld-${project.version}</tag>
-								</tags>
+								<dockerFile>${project.basedir}/Dockerfile:tomcat-helloworld-${project.version}</dockerFile>
 							</build>
 							<run>
 								<ports>-
