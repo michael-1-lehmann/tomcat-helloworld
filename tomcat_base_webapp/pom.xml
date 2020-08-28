@@ -156,14 +156,16 @@
 				</executions>
 
 				<configuration>
+					<registry>docker.io</registry>
 					<images>
 						<image>
-							<name>${finalname}</name>
+							<name>mlehmann007/samples</name>
 							<build>
 								<dockerFile>${project.basedir}/Dockerfile</dockerFile>
+								<tags>tomcat-helloworld-${version}</tags>
 							</build>
 							<run>
-								<ports>
+								<ports>-
 									<port>8080:9090</port>
 								</ports>
 								<env>
