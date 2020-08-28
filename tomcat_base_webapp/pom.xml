@@ -159,9 +159,9 @@
 					<registry>docker.io</registry>
 					<images>
 						<image>
-							<name>mlehmann007/samples</name>
+							<name>mlehmann007/samples:tomcat-helloworld-${project.version}</name>
 							<build>
-								<dockerFile>${project.basedir}/Dockerfile:tomcat-helloworld-${project.version}</dockerFile>
+								<dockerFile>${project.basedir}/Dockerfile</dockerFile>
 							</build>
 							<run>
 								<ports>-
