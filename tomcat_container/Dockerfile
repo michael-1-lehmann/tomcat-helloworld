@@ -1,4 +1,4 @@
-FROM zulu-openjdk-centos:11.0.7
+FROM mlehmann007/samples:Azul-Zulu_Java-11.0.7
 
 MAINTAINER Michael Lehmann <michael.3.lehmann@mailbox.org>
 
