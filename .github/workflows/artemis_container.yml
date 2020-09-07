@@ -25,7 +25,7 @@ jobs:
       - name: Build and push Docker images
         uses: docker/build-push-action@v1
         with:
-          director: ./artemis_container
+          directory: ./artemis_container
           dockerfile: ./artemis_container/Dockerfile.alpine 
           buildArgs: BASE_IMAGE=alpine
           username: ${{ secrets.DOCKER_USERNAME }}
