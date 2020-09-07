@@ -59,15 +59,15 @@ RUN if test "${ACTIVEMQ_ARTEMIS_VERSION}" = "1.0.0" ; \
     then \
       echo n | "/opt/apache-artemis-${ACTIVEMQ_ARTEMIS_VERSION}/bin/artemis" create artemis \
         --home /opt/apache-artemis \
-        --user artemis \
-        --password simetraehcapa \
+        --user user \
+        --password my12Artemis+ \
         --cluster-user artemisCluster \
         --cluster-password simetraehcaparetsulc ; \
     else \
       "/opt/apache-artemis-${ACTIVEMQ_ARTEMIS_VERSION}/bin/artemis" create artemis \
         --home /opt/apache-artemis \
-        --user artemis \
-        --password simetraehcapa \
+        --user user \
+        --password my12Artemis+ \
         --role amq \
         --require-login \
         --cluster-user artemisCluster \
