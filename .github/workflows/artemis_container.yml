@@ -26,8 +26,8 @@ jobs:
         uses: docker/build-push-action@v1
         with:
           path: ./artemis_container
-          dockerfile: ./artemis_container/Dockerfile.alpine 
-          build_args: BASE_IMAGE=alpine
+          dockerfile: ./artemis_container/Dockerfile 
+          build_args: BASE_IMAGE=debian
           username: ${{ secrets.DOCKER_USERNAME }}
           password: ${{ secrets.DOCKER_PASSWORD }}
           repository: mlehmann007/samples
