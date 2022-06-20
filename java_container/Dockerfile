@@ -1,7 +1,7 @@
 # Derived from https://hub.docker.com/r/azul/zulu-openjdk-centos and https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/11.0.10-11.45.27/Dockerfile
 FROM centos:7
 
-#Pick always latest version
+#Pick always latest version. In case I find out the exact name for a specific patch version then this could also be used
 ENV AZUL_ZULU_MINOR_VERSION zulu11-jdk
 
 #

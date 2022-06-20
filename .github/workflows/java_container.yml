@@ -1,4 +1,4 @@
-# This workflow will build and publish the lates Azul Zulu Java 11 container image
+# This workflow will build and publish the lates Azul Zulu Java 11 container image to Dockerhub
 
 name: Azul_Zulu_Container_Image
 
@@ -8,8 +8,6 @@ on:
   push:
     paths:
       - './java_container/Dockerfile'
-
-on:
   schedule:
     # runs at 1am on 25th Jan, Apr, Jul and Oct to build the new latest version
     - cron:  '0 1 25 1,4,7,10 *'
