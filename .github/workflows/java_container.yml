@@ -8,8 +8,6 @@ on:
   push:
     paths:
       - './java_container/Dockerfile'
-
-on:
   schedule:
     # runs at 1am on 25th Jan, Apr, Jul and Oct to build the new latest version
     - cron:  '0 1 25 1,4,7,10 *'
