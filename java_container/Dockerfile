@@ -1,9 +1,8 @@
-# Derived from https://hub.docker.com/r/azul/zulu-openjdk-centos and https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/11.0.7-11.39.15/Dockerfile
+# Derived from https://hub.docker.com/r/azul/zulu-openjdk-centos and https://github.com/zulu-openjdk/zulu-openjdk/blob/master/centos/11.0.10-11.45.27/Dockerfile
 FROM centos:7
 
-MAINTAINER Michael Lehmann <michael.3.lehmann@mailbox.org>
-
-ENV AZUL_ZULU_MINOR_VERSION zulu-11-11.39+15
+#Pick always latest version
+ENV AZUL_ZULU_MINOR_VERSION zulu11-jdk
 
 #
 # UTF-8 by default
@@ -15,13 +14,16 @@ ENV LC_ALL en_US.UTF-8
 #
 # Pull Zulu OpenJDK binaries from official repository:
 #
+ARG ZULU_REPO_VER=1.0.0-1
+
 RUN rpm --import http://repos.azulsystems.com/RPM-GPG-KEY-azulsystems && \
-    curl -o /etc/yum.repos.d/zulu.repo http://repos.azulsystems.com/rhel/zulu.repo && \
+    curl -sLO https://cdn.azul.com/zulu/bin/zulu-repo-${ZULU_REPO_VER}.noarch.rpm && \
+    rpm -ivh zulu-repo-${ZULU_REPO_VER}.noarch.rpm && \
     yum -q -y update && \
     yum -q -y upgrade && \
     yum -q -y install ${AZUL_ZULU_MINOR_VERSION} && \
     yum clean all && \
-    rm -rf /var/cache/yum
+    rm -rf /var/cache/yum zulu-repo_${ZULU_REPO_VER}.noarch.rpm
 
 ENV JAVA_HOME=/usr/lib/jvm/zulu-11
 ENV PATH ${PATH}:${JAVA_HOME}/bin
